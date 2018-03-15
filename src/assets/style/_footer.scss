@@ -1,0 +1,137 @@
+.main-footer {
+  &__1 {
+    background: rgb(53, 59, 72);
+    padding: 1em;
+    font-size: .8em;
+
+    @media (min-width: 900px){
+      padding: 2em 5em;
+      font-size: initial;
+    }
+    .categorias {
+   
+
+      padding: 2em 0;
+      color: #fff;
+      display: grid;
+
+      .comidas{
+      
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width:900px){
+          div:nth-child(2) {
+            justify-self: flex-end;
+          }
+
+        }
+        
+        @media (min-width: 900px){
+          font-size: initial;
+        }
+      }
+      @media (min-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "c c c p";
+        &__lista {
+          grid-area: c;
+          .comidas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+       
+      }
+       .politicas {
+          // background: red;
+         padding-top: 2em;
+         @media (min-width: 900px) {
+           grid-area: p;
+         }
+       }
+
+      p {
+        font-size: .8em;
+        line-height: 2em;
+      }
+    }
+    .contacts {
+      color: #fff;
+      @media (min-width: 900px){
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "a a b b c c";
+       
+      }
+       &--1 {
+  
+         @media (min-width: 900px){
+          display: block;
+          grid-area: a;
+
+         }
+       }
+
+      
+      
+      &--2 {
+        margin: 1em 0;
+       @media (min-width: 900px){
+        grid-area: b;
+        justify-self: center;
+        margin: initial;
+       }
+        .iconos {
+           @media (min-width: 900px) {
+            display: flex;
+            justify-content: space-between;
+           }
+          .fa-twitter {
+            margin-right: 1em;
+            
+            @media (min-width: 900px){
+              border: 2px solid #fff;
+              border-radius: 50%;
+              padding: .2em;
+              font-size: 1.8em;
+
+            }
+            
+          }
+        }
+      }
+      &--3 {
+        grid-area: c;
+        justify-self: center;
+      }
+      p {
+        margin-top: -1em;
+        font-size: .8em;
+        line-height: 2em;
+      }
+      .submit {
+        background: none;
+        border: 1px solid #fff;
+        border-radius: .2em;
+        padding: .5em;
+        color: #fff;
+        font-weight: bold;
+        outline: none;
+      }
+    }
+  }
+  &__2 {
+    background: #2f3640;
+    padding: 2em 5em;
+    text-align: center;
+    font-weight: bold;
+    color: #95a5a6;
+  }
+}
+
+.titulo {
+  color: #95a5a6;
+  font-size: .9em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
