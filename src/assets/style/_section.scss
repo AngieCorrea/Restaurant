@@ -1,0 +1,45 @@
+.section-app {
+  background: #ecf0f1;
+  padding-top: 3em;
+  margin-top: 5em;
+}
+
+.container-info {
+  padding: 1em;
+  background: url('https://domicilios.com.pe/images/placeholders/footer-phone-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: 900px) { 
+    background: url('https://domicilios.com.pe/images/placeholders/footer-phone-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main {
+    @media (min-width: 900px) {
+      display: flex;
+      margin: 0 10em;
+      justify-content: left;
+      align-items: center;
+      width: 60%;
+    }
+  }
+  &--app {
+    img {
+      width: 100%;
+      margin-top: -2em;
+      display: block;
+    }
+  }
+  &--description {
+    width: 100%;
+    .title {
+      color: #fff;
+      margin-bottom: .2em;
+      font-size: 2em;
+    }
+    .parrafo {
+      color: #bdc3c7;
+      font-size: .9em;
+    }
+  }
+}
