@@ -35,9 +35,6 @@
           align-items: flex-start;
           justify-content: center;
         }
-        // label:active{
-        //   color: var(--color-button);
-        // }
         label {
           padding: .7em;
           display: block;
@@ -175,6 +172,20 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1em;
         text-align: center;
+        .bpedir {
+          @media (min-width: 900px) {
+            margin: 0;
+            padding: .4em .3em; 
+            background: var(--color-button);
+            border: none;
+            color: #fff;
+            align-items: end;
+            grid-column: 4/5;
+            outline: none;
+            font-weight: bold;
+          }
+        }
+
         @media (min-width: 900px) {
           text-align: left;
         }
@@ -238,16 +249,4 @@
   }
 }
 
-.button {
-  @media (min-width: 900px) {
-    margin: 0;
-    padding: .6em 1.5em;
-    background: var(--color-button);
-    border: none;
-    color: #fff;
-    align-items: end;
-    grid-column: 4/5;
-    outline: none;
-    font-weight: bold;
-  }
-}
+

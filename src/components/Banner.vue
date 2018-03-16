@@ -16,6 +16,7 @@
               option(value="3") Ferreñafe
               option(value="10") Oyotun
           button Buscar restaurantes
+  
 </template>
 
 <script>
