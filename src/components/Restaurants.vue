@@ -49,7 +49,7 @@
           div.restaurant-right__datos--2--detalles
             p.info2 {{abierto.costo}}
             h2.info1  {{abierto.var}}
-          button.button Pedir Ahora
+          button.bpedir Pedir Ahora
     div(v-else="vue.vista").restaurant-right
       Premium
 
